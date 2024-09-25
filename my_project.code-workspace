@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"markdown.copyFiles.destination": {
+			"": ""
+		},
+		"files.exclude": {
+			"**/__pycache__": true,
+			"**/.mypy_cache": true,
+			"**/.pytest_cache": true,
+			"**/.ruff_cache": true
+		},
+		"python.defaultInterpreterPath": "dev-env/bin/python",
+		"ruff.interpreter": [
+			""
+		]
+	}
+}
