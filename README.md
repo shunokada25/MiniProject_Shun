@@ -1,3 +1,4 @@
+:nerd_face:
 A well-written README provides essential information about your project,
 such as installation instructions, usage examples, and contributions guidelines.
 
@@ -17,16 +18,16 @@ pip install -e .[dev]
 ``` 
 
 # Add/Remove/Re-install external modules/packages:
-## Add new package:
-1. add package to pyproject.toml
-2. run 
+### Add new package:
+1. Add package to pyproject.toml
+2. Run: 
 ```bash 
 pip install -e .[dev]
 ``` 
 
-## Remove new package:
-1. remove the package from pyproject.toml
-2. run:
+### Remove new package:
+1. Remove the package from pyproject.toml
+2. Run:
 ```bash 
 pip uninstall <package-name>
 ```
@@ -35,32 +36,35 @@ note: if you're don't remember the exact package name copy it from:
 pip list
 ```
 
-# In case of a package failure (installation stoped in the middle or something like that):
-1. delete venv file 
-2. return on 'On first run' steps
+### In case of a package failure:
+Cases like package installation interuppted in the middle or something like that
+1. Try to remove package and install it again.
+2. If it doesn't help delete venv folder 
+3. repeat 'On first run' steps
 
 
 # Health check:
-### Check formatting, type hinting, lint code & docstrings:
-Lint Project:
+### Lint Project:
+Check formatting, type hinting, lint code & docstrings
 ```bash
 tox run -e lint
 ```
-### Test Project: run all tests on diffrent python versions and produce tests-coverage and tests-results reports (make sure tested versions installed before run):
+### Test Project: 
+Run all tests on diffrent python versions and produce tests-coverage and tests-results reports (make sure tested versions installed before run):
 ```bash
 tox run -f test
 ```
-## Lint and Test Project (on diffrent python versions):
+### Lint and Test Project (on diffrent python versions):
 ```bash
 tox run
 ```
 
-# Not implemented yet (expand if needed):
-- Build documentation:
+# $${\color{red}Implement if needed}$$:
+### Build documentation:
 ```bash
 tox run -e docs
 ```
-- Packaging Python Project
+### Packaging Python Project
 ```bash
 tox run -e build
 ```
