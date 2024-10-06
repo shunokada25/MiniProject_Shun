@@ -49,10 +49,12 @@ lint.ignore = [
     "PT004",    # https://github.com/astral-sh/ruff/issues/8796#issuecomment-1825907715
     "PT005",    # https://github.com/astral-sh/ruff/issues/8796#issuecomment-1825907715
     "PT023",    # https://github.com/astral-sh/ruff/issues/8796#issuecomment-1825907715
+    "D415",     # Docstring can end without ./!
+    "D416",     # Docstring Return can end without :
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"tests/**" = [
+"**/tests/**" = [
     "S101", # Use of `assert` detected
     "D103", # Missing docstring in public function
 ]

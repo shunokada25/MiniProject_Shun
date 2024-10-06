@@ -12,20 +12,24 @@
 			"**/__pycache__": true,
 			"**/.mypy_cache": true,
 			"**/.pytest_cache": true,
+			"**/my_project.egg-info": true,
 			"**/.ruff_cache": true,
 			"mypy_cache": true,
 			"pytest_cache": true,
 			"ruff_cache": true,
 			".tox": true,
 			"build": true,
-			"reports": true,
 			"archive": true,
 			"**/egg-info": true,
 		},
 		"python.defaultInterpreterPath": "~/venv/bin/python",
 		"python.terminal.activateEnvironment": true,
-		"ruff.interpreter": [
-			""
-		]
+		"editor.defaultFormatter": "charliermarsh.ruff",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "always",
+			"source.fixAll.ruff": "always",
+			"source.fixAll": "always"
+		}
 	}
 }
