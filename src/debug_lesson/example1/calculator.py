@@ -16,10 +16,8 @@ class Calculator:
 
         Parameters
         ----------
-        a : float
-        the first number `a`.
-        b : float
-        the second number `b`.
+        a : float - the first number `a`
+        b : float - the second number `b`
 
         Returns
         -------
@@ -35,10 +33,8 @@ class Calculator:
 
         Parameters
         ----------
-        a : float
-        the dividend `a`.
-        b : float
-        the divisor `b`.
+        a : float - the dividend `a`
+        b : float - the divisor `b`
 
         Returns
         -------
