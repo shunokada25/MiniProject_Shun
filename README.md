@@ -7,6 +7,8 @@ all command should run under project root/working-directory
 
 ## On first run:
 ```bash 
+#install Virtualenv is - a tool to set up your Python environments
+pip install virtualenv
 #create virtual environment (serve only this project):
 python -m venv venv
 #activate virtual environment
