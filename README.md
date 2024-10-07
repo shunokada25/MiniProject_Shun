@@ -20,7 +20,7 @@ pip install -e .[dev]
 # Add/Remove/Re-install external modules/packages:
 ### Add new package:
 1. Add package to pyproject.toml
-2. Run: 
+2. Run:
 ```bash 
 pip install -e .[dev]
 ``` 
