@@ -2,12 +2,11 @@
 
 import logging
 
-#configure the root logger
-logger = logging.basicConfig(
+# configure the root logger
+logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s - %(filename)s - %(funcName)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.FileHandler("app.log"),
-        logging.StreamHandler()])
+    handlers=[logging.FileHandler("app.log"), logging.StreamHandler()],
+)
 # Get the root logger
 logger = logging.getLogger()

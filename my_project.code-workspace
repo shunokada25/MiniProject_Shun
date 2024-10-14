@@ -4,13 +4,16 @@
 			"path": "."
 		}
 	],
-	"recommendations": [
-		"ms-python.python",
-		"ms-python.vscode-pylance",
-		"donjayamanne.python-environment-manager",
-		"kaih2o.python-resource-monitor",
-		"charliermarsh.ruff",
-	],
+	"extensions": {
+		"recommendations": [
+			"ms-python.python",
+			"ms-python.vscode-pylance",
+			"donjayamanne.python-environment-manager",
+			"kaih2o.python-resource-monitor",
+			"charliermarsh.ruff",
+			"matangover.mypy"
+		],
+	},
 	"settings": {
 		"markdown.copyFiles.destination": {
 			"": ""
@@ -36,6 +39,6 @@
 			"source.organizeImports": "always",
 			"source.fixAll.ruff": "always",
 			"source.fixAll": "always"
-		}
+		},
 	}
 }

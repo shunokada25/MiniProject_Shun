@@ -1,11 +1,12 @@
 """Test Calculator Class."""
 
 import pytest
-from src.utils.calculator import Calculator
+
+from package_name.tools.calculator import Calculator
 
 
 @pytest.fixture
-def calculator() -> None:
+def calculator() -> type[Calculator]:
     """Fixture to create a Calculator instance."""
     return Calculator
 

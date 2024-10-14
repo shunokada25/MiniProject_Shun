@@ -6,5 +6,7 @@ ruff_cache
 build
 reports
 archive
+dist
+.coverage
 **/*.egg-info
 **/__pycache__
