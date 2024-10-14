@@ -20,15 +20,15 @@ pip install --upgrade pip
 pip install -e .[dev]     
 ``` 
 
-## Add/Remove/Re-install external modules/packages:
-#### Add new package:
+## Modify Package Dependencies (Add/Remove/Update external modules/packages):
+#### Add new module:
 1. Add package to pyproject.toml
 2. Run:
 ```bash 
 pip install -e .[dev]
 ``` 
 
-#### Remove new package:
+#### Remove new module:
 1. Remove the package from pyproject.toml
 2. Run:
 ```bash 
@@ -39,14 +39,14 @@ note: if you're don't remember the exact package name copy it from:
 pip list
 ```
 
-#### In case of a package failure:
+#### Steps in case of a package failure:
 Cases like package installation interuppted in the middle or something like that
 1. Try to remove package and install it again.
 2. If it doesn't help delete venv folder 
 3. repeat 'On first run' steps
 
 
-## Health check ():
+## Health check (Lint/Tests/Tests-Coverage):
 #### Lint Project:
 Check formatting, type hinting, lint code & docstrings
 ```bash
@@ -62,9 +62,10 @@ tox run -f test
 tox run
 ```
 
-#### Packaging Python Project (should run on version change)
+## Build/Packaging the Project (should run on every version change)
+```bash
 python -m build
-
+```
 
 ### $${\color{red} TBD}$$:
 #### Package documentation:
