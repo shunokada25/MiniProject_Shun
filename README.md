@@ -20,7 +20,7 @@ pip install --upgrade pip
 pip install -e .[dev]     
 ``` 
 
-## Modify Package Dependencies (Add/Remove/Update external modules/packages):
+## Modify package dependencies (add/remove/update external modules/packages):
 #### Add new module:
 1. Add package to pyproject.toml
 2. Run:
@@ -57,12 +57,12 @@ Run all tests on diffrent python versions and produce tests-coverage and tests-r
 ```bash
 tox run -f test
 ```
-#### Lint and Test Project (on diffrent python versions):
+#### Lint and Test project (on diffrent python versions):
 ```bash
 tox run
 ```
 
-## Build/Packaging the Project (should run on every version change)
+## Build/Packaging the project (should run on every version change)
 ```bash
 python -m build
 ```
