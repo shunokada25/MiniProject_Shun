@@ -62,7 +62,7 @@ tox run -f test
 tox run
 ```
 
-## Build/Packaging the project (should run on every version change)
+## Build/pack the project (should run on every version change)
 ```bash
 python -m build
 ```
