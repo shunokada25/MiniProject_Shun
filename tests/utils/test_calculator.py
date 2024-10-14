@@ -1,8 +1,7 @@
 """Test Calculator Class."""
 
 import pytest
-
-from debug_lesson.example1.calculator import Calculator
+from src.utils.calculator import Calculator
 
 
 @pytest.fixture
