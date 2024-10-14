@@ -46,7 +46,7 @@ Cases like package installation interuppted in the middle or something like that
 3. repeat 'On first run' steps
 
 
-## Health check:
+## Health check ():
 #### Lint Project:
 Check formatting, type hinting, lint code & docstrings
 ```bash
@@ -62,12 +62,13 @@ tox run -f test
 tox run
 ```
 
+#### Packaging Python Project (should run on version change)
+python -m build
+
+
 ### $${\color{red} TBD}$$:
-#### Build documentation:
+#### Package documentation:
 ```bash
 tox run -e docs
 ```
-#### Packaging Python Project
-```bash
-tox run -e build
-```
+

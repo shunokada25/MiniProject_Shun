@@ -1,6 +1,6 @@
 """Module contain only the Calculator Class."""
 
-from logger import logger
+from package_name.logger import logger
 
 
 class Calculator:
