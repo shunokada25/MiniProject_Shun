@@ -13,6 +13,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "tox",
+    "jupyter", #added jupyter to dev and then install dev again from read me
     "my-project[lint]",
     "my-project[test]",
     "my-project[doc]",

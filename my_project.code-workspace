@@ -11,7 +11,10 @@
 			"donjayamanne.python-environment-manager",
 			"kaih2o.python-resource-monitor",
 			"charliermarsh.ruff",
-			"matangover.mypy"
+			"matangover.mypy",
+			"ms-toolsai.jupyter" //added recommendation becausw i added jupyter to the toml
+			
+
 		],
 	},
 	"settings": {
